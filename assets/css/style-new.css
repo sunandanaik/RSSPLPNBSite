@@ -1,0 +1,479 @@
+section.current-account-section.three .col-md-8.account-type {
+    background-color: transparent;
+    padding: 0;
+}
+
+section.current-account-section.three .col-md-8 {
+    background-color: #fff;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+    section.current-account-section.three .col-md-8 ul span {
+        color: #818080;
+        font-family: PT Sans;
+        font-size: 14px;
+    }
+
+    section.current-account-section.three .col-md-8 h5 {
+        margin-left: 19px;
+        margin-bottom: 0;
+        /*color: #4f4f4f;*/
+        color: #818080;
+        font-weight: 600 !important;
+        /*spacing for contact heading*/
+        margin-top: 15px;
+        /*spacing for contact heading*/
+    }
+
+    section.current-account-section.three .col-md-8 span.line-text {
+        margin-left: 21px;
+    }
+
+    section.current-account-section.three .col-md-8 ul li {
+        margin-bottom: 10px;
+    }
+
+    section.current-account-section.three .col-md-8 ul {
+        color: #b72854;
+    }
+
+    section.current-account-section.three .col-md-8.account-type p {
+        color: #b0b0b0;
+        font-size: 13px;
+        font-family: PT Sans;
+    }
+
+table, th, td {
+    border: 1px solid #ddd;
+    color: #818080;
+    font-family: PT Sans;
+    font-size: 14px;
+    /*text-align: center;*/
+}
+
+th, td {
+    padding: 10px;
+}
+
+thead tr th {
+    background-color: #a20a39;
+    color: white;
+    /* border: 1px solid #fff; */
+}
+
+ul.check-book-ul.saving li {
+    display: inherit;
+    background-color: #a20a3900;
+    color: #fff;
+    position: relative;
+    padding: 0px 0px;
+    border-radius: 3px;
+    margin: 2px;
+    width: 100%;
+    font-size: 19px;
+    font-family: PT Sans;
+    border-radius: 8px;
+}
+
+ul.check-book-ul.saving {
+    margin: 0;
+    padding: 0;
+    list-style-type: disc;
+    width: 97%;
+    margin: 0 auto;
+    margin-top: 2%;
+    display: list-item;
+}
+
+section.current-account-section.three .col-md-8 p span {
+    color: #818080;
+    font-family: PT Sans;
+    font-size: 14px;
+    /*margin-left: 21px;*/
+}
+
+a.contactus, ul.nav.nav-tabs.menu-tab.faq a {
+    margin-left: 8%;
+}
+
+a {
+    color: #b8043c;
+}
+
+    a:hover {
+        color: #ffc20f;
+    }
+
+table.moneytranfer {
+    margin-bottom: 10px;
+    width: 95%;
+}
+
+section.current-account-section.three .col-md-12 ul span {
+    color: #818080;
+    font-family: PT sans;
+    font-size: 15px;
+}
+
+section.current-account-section.three .col-md-12 h5 {
+    margin-left: 21px;
+    margin-top: 15px;
+    margin-bottom: 0;
+    color: #818080;
+    font-family: PT sans;
+    font-weight: 600;
+}
+section.current-account-section.three .col-md-12 h2 {
+    margin-left: 21px;
+    margin-bottom: 0;
+    color: #818080;
+    font-family: PT sans;
+    font-weight: 600;
+}
+
+section.current-account-section.three .col-md-12 {
+    background-color: #fff;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+    section.current-account-section.three .col-md-12 ul {
+        /*color: #b72854;*/
+        /*new changes*/
+        color: #818080;
+        font-family: PT sans;
+        font-size: 14px;
+        /*new changes end*/
+    }
+
+    section.current-account-section.three .col-md-12 span.line-text {
+        margin-bottom: 19px;
+        margin-left: 24px;
+        margin-top: 11px;
+    }
+
+    section.current-account-section.three .col-md-12.account-type p {
+        color: #b0b0b0;
+        font-size: 13px;
+        font-family: PT Sans;
+    }
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    /* background-color: #f9f9f9; */
+    background-color: #f6f2f2;
+    min-width: 44%;
+    /* min-width: 100px; */
+    padding-bottom: 7px;
+    box-shadow: 0px 8px 12px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    margin-top: 2%;
+}
+
+.dropdowns {
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    /*width: 100%;*/  /*TEMP changes for LIVE*/
+    width: 58%;
+    padding-top: 11px;
+    padding-bottom: 0%;
+}
+/* #SrcCurr:before { */
+        /* content: ""; */
+        /* position: absolute; */
+        /* right: 43px; */
+        /* top: 16px; */
+        /* width: 0; */
+        /* height: 0; */
+        /* border-left: 4px solid transparent; */
+        /* border-right: 4px solid transparent; */
+        /* border-top: 7px solid #a20a39; */
+		
+/* } */
+#SrcCurr:before {
+    content: "";
+    position: relative;
+    left: 72%;
+    top: 14px;
+    width: 0;
+    height: 0;
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    border-top: 7px solid #a20a39;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 11px 0px 13px 0px;
+    text-decoration: none;
+    display: block;
+    padding-left: 0;
+    padding-left: 12px;
+    border: 1px solid #e4e4e4;
+}
+
+    .dropdown-content a:hover {
+        background-color: #f1f1f1
+    }
+
+.dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+}
+
+div.news p {
+    margin-left: 2%;
+}
+
+.directors-profile-section .col-md-12 .account-type {
+    background: transparent;
+}
+
+.directors-profile {
+    background: #fff;
+}
+
+    .directors-profile h5 {
+        font-weight: 700;
+        font-family: PT Sans;
+        font-size: 18px;
+        margin-bottom: 0px;
+    }
+
+    .directors-profile img {
+        width: 100%;
+    }
+
+.subtitle {
+    font-size: 13px;
+    margin-bottom: 0;
+}
+
+.description {
+    color: #818080;
+    font-family: PT Sans;
+    font-size: 15px;
+}
+
+.paragraph {
+    font-weight: 500;
+    font-size: 15px !important;
+    color: #818080;
+    /* text-align: justify; */
+}
+
+a.contactus1 span.img-span {
+    background-image: url(../img/maps/Central-London.png);
+    width: 35px;
+    display: inline-block;
+    height: 35px;
+    position: relative;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-right: 2px;
+    margin-left: 7px;
+    vertical-align: bottom;
+}
+
+section.current-account-section.three ul.nav.nav-tabs li a.contactus1 {
+    font-size: 19px;
+    margin-left: 10%;
+}
+
+a.contactus1 span.img-span.southall {
+    background-image: url(../img/maps/Southall.png);
+}
+
+a.contactus1 span.img-span.leicester {
+    background-image: url(../img/maps/Leicester.png);
+}
+
+a.contactus1 span.img-span.birmingham {
+    background-image: url(../img/maps/Birmingham.png);
+}
+
+a.contactus1 span.img-span.ilford {
+    background-image: url(../img/maps/Ilford.png);
+}
+
+a.contactus1 span.img-span.wembley {
+    background-image: url(../img/maps/Ilford.png);
+}
+
+a.contactus1 span.img-span.wolverhampton {
+    background-image: url(../img/maps/Ilford.png);
+}
+
+li.active a.contactus1.active span.img-span.london {
+    background-image: url(../img/maps/Central-London-white.png);
+}
+
+a.contactus1.active span.img-span.southall {
+    background-image: url(../img/maps/Southall-white.png);
+}
+
+a.contactus1.active span.img-span.leicester {
+    background-image: url(../img/maps/Leicester-white.png);
+}
+
+a.contactus1.active span.img-span.birmingham {
+    background-image: url(../img/maps/Birmingham-white.png);
+}
+
+a.contactus1.active span.img-span.ilford {
+    background-image: url(../img/maps/Ilford-white.png);
+}
+
+a.contactus1.active span.img-span.wembley {
+    background-image: url(../img/maps/Ilford-white.png);
+}
+
+a.contactus1.active span.img-span.wolverhampton {
+    background-image: url(../img/maps/Ilford-white.png);
+}
+
+section.current-account-section.three div#menu11 p {
+    margin: 0 5px;
+    font-family: PT Sans;
+    font-size: 14px;
+    color: #818080;
+    margin-bottom: 10px;
+    padding-left: 15px;
+}
+
+@media only screen and (max-width: 480px) {
+    ul.check-book-ul.saving li {
+        padding: 8px 12px;
+        font-size: 17px;
+        width: 100%;
+        text-align: left;
+        list-style-position: inside;
+    }
+
+    ul.check-book-ul.saving {
+        width: 100%;
+        text-align: center;
+        padding-left: 0;
+    }
+}
+
+section.current-account-section.three .col-md-6 {
+    background-color: #fff;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+    section.current-account-section.three .col-md-6 ul {
+        color: #b72854;
+        margin-right: 21px;
+    }
+
+        section.current-account-section.three .col-md-6 ul span {
+            color: #818080;
+            font-family: PT sans;
+            font-size: 14px;
+        }
+
+    section.current-account-section.three .col-md-6 span.line-text {
+        margin-left: 21px;
+    }
+
+    section.current-account-section.three .col-md-6 h5 {
+        margin-left: 21px;
+        margin-right: 21px;
+        margin-bottom: 0;
+        color: #818080;
+        font-family: PT sans;
+        font-weight: 600;
+        text-align: justify;
+    }
+
+#top-button {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    border-radius: 4px;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    transition: background-color .3s, opacity .5s, visibility .5s;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 1000;
+}
+.top-icon-img{
+    /*width:65%;*/
+    width:100%;
+}
+
+#button::after {
+    content: "\f077";
+    font-family: FontAwesome;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 2em;
+    line-height: 50px;
+    color: #fff;
+}
+
+#top-button:hover {
+    cursor: pointer;
+}
+
+
+#top-button.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+.business_section_main {
+    padding-left: 66%;
+    bottom: 0%;
+    padding-top: 24%;
+}
+
+.business_section {
+    line-height: 50px;
+    background: #ffc20f;
+    /* border-radius: 10px; */
+    color: #212529;
+    padding: 6px 35px;
+    border-radius: 14px;
+    font-weight: 600;
+    margin-left: 0%;
+    width: 74%;
+    position: relative;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.personal_banner {
+    background-image: url(../img/PNB-mobile-app.jpg) !important;
+    background-size: cover;
+    border-left: 4px solid #fff;
+}
+
+.banner1{
+    background:transparent !important;
+}
+section.current-account-section.three .col-md-9 ul li:before {
+    content: "\2022";
+    color: #b72854;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
+<<<<<<< HEAD
+span {
+    color: #818080;
+}
+
+=======
+.dcontact{
+	width: auto;
+	vertical-align:text-top;
+}
+>>>>>>> d70577d0222e557375b9631cf195b76a4149e475

@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript" src="./assets/js/jquery.min.js"></script>
+    <script type="text/javascript" src="./assets/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="./assets/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/bootstrap-grid.min.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/bootstrap-reboot.min.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/owl.theme.default.min.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+    <link href="./assets/css/style-new.css" rel="stylesheet" />
+    <link href="./favicon.ico" rel="shortcut icon" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="./assets/css/responsive.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="loader pulse">
+        <img id="loaderimg" src="./assets/Loaderlogo.png" alt="">
+    </div>
+    <div id="main">
+        <a id="top-button">
+            <img class="top-icon-img" src="./assets/img/scroll-up.png" />
+        </a>
+        <div class="main_div">
+            <header class="main-header">
+                <nav class="top-bar">
+                    <div class="container">
+                        <div class="left-side">
+                            <ul class="top-nav-bar">
+                                <li class="personalhome_partial top-personalhome_partial active"><a id="personal_db_link" href="#">Personal</a></li>
+                                <li class="businesshome_partial top-businesshome_partial"><a id="business_db_link" href="#">Business</a></li>
+                                <li class="loanshome_partial top-loanshome_partial"><a id="loans_db_link" href="#">Loans</a></li>
+                                <li class="moneytransfer_partial top-moneytransfer_partial"><a id="moneytransfer_db_link" href="#">Money Transfer</a></li>
+                            </ul>
+                        </div>
+                        <div class="right-side">
+                            <ul>
+                                <li><img src="./assets/img/uk-flag.png" class="img-rounded flag" style="display:none" alt="London"> <span id="london"></span></li>
+                                <li><img src="./assets/img/india-flag.png" class="img-rounded flag" style="display:none" alt="India"> <span id="india"></span></li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+                <nav class="navbar navbar-expand-lg navbar-light bg-light middle-bar">
+                    <div class="container">
+                        <a class="navbar-brand personalhome_partial" id="personal_db_link" href="#"><img src="./assets/img/pnb-logo.png"></a>
+                        <button class="navbar-toggler my-menu" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse ml-auto" id="navbarSupportedContent">
+                            <ul class="navbar-nav ml-auto">
+                                <li class="nav-item">
+                                    <a class="nav-link button-new" id="login-button" href="https://onlinepnbglobal.com/ukret/AuthenticationController?FORMSGROUP_ID__=AuthenticationFG&__START_TRAN_FLAG__=Y&__FG_BUTTONS__=LOAD&ACTION.LOAD=Y&AuthenticationFG.LOGIN_FLAG=1&BANK_ID=024">Personal login</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle text-capitalize" id="navbarDropdownabout" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                        About us <!-- <span class="fa fa-caret-down"></span> -->
+                                    </a>
+                                    
+                                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <a class="dropdown-item about_partial" id="aboutus_db_link" href="#">About PNBIL</a>
+                                        <a class="dropdown-item financialreport_partial" id="financialreports_db_link" href="#">Financial Reports</a>
+                                        <a class="dropdown-item directorprofile_partial" id="directorsprofile_db_link" href="#">Directors Profiles</a>
+                                        <a class="dropdown-item compliance_partial" href="./pdf/Compliance/FCCQ_V1.1 (003).pdf" target="_blank">Compliance Documents</a>
+                                        <a class="dropdown-item compliance_partial" id="compliancedocuments_db_link" href="#">Compliance Documents</a>
+                                        <a class="dropdown-item career_partial" id="career_db_link" href="#">Careers</a>
+                                        <a class="dropdown-item" href="https://www.pnbindia.in/" target="_blank">Parent PNB-India</a>
+                                    </div>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle text-capitalize" id="navbarDropdownfaq" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">FAQ</a>
+                                    <div class="dropdown-menu faqmenu" aria-labelledby="navbarDropdownfaq">
+                                        <a class="dropdown-item faqaccount_partialma" id="faq_db_link" href="#">Mobile App</a>
+                                        <a class="dropdown-item faqaccount_partialcisa" id="faq_db_link" href="#">Cash ISA</a>
+                                        <a class="dropdown-item faqaccount_partialmt" id="faq_db_link" href="#">Money Transfer</a>
+                                        <a class="dropdown-item faqaccount_partialib" id="faq_db_link" href="#">Internet Banking</a>
+                                        <a class="dropdown-item faqaccount_partialfd1" id="faq_db_link" href="#">Fixed Deposits</a>
+                                        <a class="dropdown-item faqaccount_partialbfd1" id="faq_db_link" href="#">Business Fixed Deposits</a>
+                                        <a class="dropdown-item faqaccount_partialca1" id="faq_db_link" href="#">Current Account</a>
+                                        <a class="dropdown-item faqaccount_partialbca1" id="faq_db_link" href="#">Business Current Account</a>
+                                        <a class="dropdown-item faqaccount_partialsa" id="faq_db_link" href="#">Savings Account</a>
+                                        <a class="dropdown-item faqaccount_partialnri" id="faq_db_link" href="#">NRI Account</a>
+                                        <a class="dropdown-item faqaccount_partialdc" id="faq_db_link" href="#">Debit Card</a>
+                                        <a class="dropdown-item faqaccount_partialir" id="faq_db_link" href="#">Interest Rate</a>
+                                        <a class="dropdown-item faqaccount_partialseca" id="faq_db_link" href="#">Security Advisory</a>
+                                        <a class="dropdown-item faqaccount_partialpsd2" id="faq_db_link" href="#">PSD2</a>
+                                    </div>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link contactus_partial text-capitalize" id="contactus_db_link" href="#">Contact us</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+                <nav class="navbar navbar-expand-lg navbar-dark bg-dark bottom-bar">
+                    <div class="container">
+                        <div class="collapse navbar-collapse" id="navb">
+                            <ul class="navbar-nav mr-auto">
+                                <li class="nav-item">
+                                    <a class="personalhome_partial" id="personal_db_link" href="#"><img class="home-icon" src="./assets/img/home-icon.png"></a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" id="navbarDropdownAccounts" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Accounts</a>
+                                    <div class="dropdown-menu mydropdownmenu faqmenu-nav " aria-labelledby="navbarDropdownAccounts">
+                                        <a class="dropdown-item currentaccount_partial" id="pcurrentaccount_db_link" href="#">Current Account</a>
+                                        <a class="dropdown-item savingsaccount_partial" id="psavingsaccount_db_link" href="#">Savings Account</a>
+                                        <a class="dropdown-item businesscurrentaccount_partial" id="bcurrentaccount_db_link" href="#" style="display:none">Business Current Account</a>
+                                        <a class="dropdown-item faqaccount_partialbca" id="faq_db_link" href="#">FAQ</a>
+                                        <a class="dropdown-item faqaccount_partialca" id="faq_db_link" href="#">FAQ</a>
+
+                                    </div>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" id="navbarDropdownFixedDeposits" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Fixed Deposits</a>
+                                    <div class="dropdown-menu mydropdownmenu faqmenu-nav " aria-labelledby="navbarDropdownFixedDeposits">
+                                        <a class="dropdown-item fixeddepositaccount_partial" id="fixeddeposit_db_link" href="#">Fixed Deposits</a>
+                                        <a class="dropdown-item businessfixeddepositaccount_partial" id="businessfixeddeposit_db_link" href="#">Business Fixed Deposits</a>
+                                        <a class="dropdown-item faqaccount_partialbfd" id="faq_db_link" href="#">FAQ</a>
+                                        <a class="dropdown-item faqaccount_partialfd" id="faq_db_link" href="#">FAQ</a>
+                                    </div>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownCashISA" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Cash ISA</a>
+                                    <div class="dropdown-menu mydropdownmenu faqmenu-nav " aria-labelledby="navbarDropdownCashISA">
+                                        <a class="dropdown-item cashisa_partial" id="cashisa_db_link" href="#">Cash ISA</a>
+                                        <a class="dropdown-item faqaccount_partialcisa" id="faq_db_link" href="#">FAQ</a>
+                                    </div>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMoneyTransfer" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Money Transfer</a>
+                                    <div class="dropdown-menu mydropdownmenu faqmenu-nav " aria-labelledby="navbarDropdownMoneyTransfer">
+                                        <a class="dropdown-item internetbanking_partial" id="internetbanking_db_link" href="#">Internet Banking</a>
+                                        <a class="dropdown-item swifttransferbanking_partial" id="swifttransfer_db_link" href="#">SWIFT Transfers </a>
+                                        <a class="dropdown-item faqaccount_partialmt" id="faq_db_link" href="#">FAQ</a>
+                                    </div>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownDebitCards" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Debit Cards</a>
+                                    <div class="dropdown-menu mydropdownmenu faqmenu-nav " aria-labelledby="navbarDropdownDebitCards">
+                                        <a class="dropdown-item debitmastercard_partial" id="debitcardmaster_db_link" href="#">Debit MasterCard</a>
+                                        <a class="dropdown-item faqaccount_partialdc" id="faq_db_link" href="#">FAQ</a>
+                                    </div>
+                                </li>
+
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownNRIServices" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">NRI Services</a>
+                                    <div class="dropdown-menu mydropdownmenu faqmenu-nav" aria-labelledby="navbarDropdownNRIServices">
+                                        <a class="dropdown-item nriservices_partial" id="nriservices_db_link" href="#">NRI Services</a>
+                                        <a class="dropdown-item faqaccount_partialnri" id="faq_db_link" href="#">FAQ</a>
+                                    </div>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link loanshome_partial loan_hide" id="loans_db_link" href="#">Loans</a>
+                                </li>
+                            </ul>
+                            <form class="form-inline my-2 my-lg-0">
+                                <input id="searchbox" class="form-control mr-sm-2" type="text" placeholder="Search" autocomplete="off">
+                                <button id="searchbtn" class="btn btn-success my-2 my-sm-0" type="button"><i class="fa fa-search"></i></button>
+                            </form>
+                        </div>
+                    </div>
+                </nav>
+            </header>
+
+            <div id="pageContent">
+                @RenderBody()
+            </div>
+
+            <div class="cookies">
+
+
+                <button class="cookiesbutton" id="cookiemanage" data-toggle="modal" data-target="#exampleModal4">
+                    Settings
+                </button>
+                <button class="cookiesbutton cookie_consent_close" id="cookieaccept">
+                    Accept
+                </button>
+                <p class="cookiestext">
+                    We use cookies to help ensure that our website and services are able to function properly.
+                    Essential cookies are set automatically, analytical and performance cookies help us to improve your experience.
+                    We capture Essential cookies and Performance and Analytical cookies.
+                    Click Accept to continue else click Settings to change your preferences. For more details, you can refer to our. <a class="cookiepolicyhome_partial cookiepolicy" id="cookiepolicy_db_link" href="#">Cookie Policy</a>
+                </p>
+            </div>
+            <div class="modal fade" id="exampleModal4" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel4"
+                 aria-hidden="true" data-backdrop="static" data-keyboard="false">
+                <div class="modal-dialog modal-dialog-centered modal-dialog-zoom modal-lg" role="document">
+                    <div class="modal-content cookie-popup-content">
+                        <!-- <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">×</span>
+                            </button>
+                        </div> -->
+                        <div class="modal-body ">
+                            <h5 class="text-center">YOUR COOKIE SETTINGS</h5>
+                            <p class="text-center">
+                                Some of these cookies are essential, while others help us to improve your
+                                experience by providing insights into how the site is being used.
+                            </p>
+
+                            <div class="col-sm-12">
+                                <div class="card text-dark bg-white mb-4">
+                                    <div class="card-header cookie-heading">
+                                        ESSENTIAL
+                                        <ul class="list-group list-group-flush float-right">
+                                            <li class="list-group-item cookie-switch-item">
+                                                <label class="switch ">
+                                                    <input type="checkbox" class="default slider-disabled" id="essential" name="essential" value="essential" checked disabled>
+                                                    <span class="slider round"></span>
+                                                </label>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="card-body text-dark">
+                                        <p class="card-text">
+                                            These cookies are essential for you to browse the website and use
+                                            its features. These cookies are essential for website to function and make sure you
+                                            are able to browse seamlessly. They are used for faster loading and effective
+                                            representation of information on it, enabling our site to function as intended.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-12">
+                                <div class="card text-dark bg-white mb-4">
+                                    <div class="card-header cookie-heading">
+                                        PERFORMANCE AND STATISTICAL
+                                        <ul class="list-group list-group-flush float-right">
+                                            <li class="list-group-item cookie-switch-item">
+                                                <label class="switch ">
+                                                    <input type="checkbox" class="default check_" id="performance" name="performance" value="performance">
+                                                    <span class="slider round"></span>
+                                                </label>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="card-body text-dark">
+                                        <p class="card-text">
+                                            These cookies are used to recognise you when you return to the
+                                            site. This enables us to remember your preferences and also let us monitor how our
+                                            website is performing. These cookies collect information, such as, number of
+                                            visitors on the website, how visitors were directed to the website and the pages
+                                            they have visited.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-12">
+                                <div class="card text-dark bg-white mb-4">
+                                    <div class="card-header cookie-heading">
+                                        TARGETING
+                                        <ul class="list-group list-group-flush float-right">
+                                            <li class="list-group-item cookie-switch-item">
+                                                <label class="switch ">
+                                                    <input type="checkbox" class="default check_" value="1" id="targeting" name="targeting" value="targeting">
+                                                    <span class="slider round"></span>
+                                                </label>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="card-body text-dark">
+                                        <p class="card-text">
+                                            These cookies help us track your online activity and allow us to
+                                            display content relevant to you and your interests, based on the way you have used
+                                            our website previously. Also, the cookies help us to measure the effectiveness of
+                                            our advertising both on and off ICICI Bank websites, and helps us to present
+                                            products that may be of interest to you.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <button type="button" id="cookiesettings" class="cookiesbutton" data-dismiss="modal">Save changes</button>
+                            <button type="button" class="cookiesbutton" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <footer class="footer-color">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="col-md-5-new nav-item pns">
+                                <h3>Banking with us</h3>
+                                <ul>
+                                    <li><a class="termsandconditions_partial " id="termsandconditions_db_link" href="#">Terms and Conditions</a></li>
+                                    <li><a href="~/pdf/Schedule of Charges valid from 01 January 2020.pdf" class=". " target="_blank">Schedule of Charges</a></li>
+                                    <li><a class="forms_partial " id="forms_db_link" href="#">Forms</a></li>
+                                    <li><a class="faqmenu1 faqaccount_partialma" id="faq_db_link" href="#">FAQ</a></li>
+                                    <li><a href="~/pdf/PrivacyNotice.pdf" class=". " target="_blank">Privacy Notice</a></li>
+                                    <li><a class="cookiepolicyhome_partial " id="cookiepolicy_db_link" href="#">Cookie Policy</a></li>
+                                    <li><a class="faqmenu1 faqaccount_partialpsd2" id="faq_db_link" href="#">PSD2</a></li>
+                                    <li><a href="~/pdf/Slavery and human trafficking statement.pdf" class=". " target="_blank">Modern Slavery Statement</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-md-5-new nav-item pns">
+                                <h3>About us</h3>
+                                <ul>
+                                    <li><a class="about_partial " id="aboutus_db_link" href="#">About PNBIL</a></li>
+                                    <li><a class="financialreport_partial " id="financialreports_db_link" href="#">Financial Reports</a></li>
+                                    <li><a class="directorprofile_partial " id="directorsprofile_db_link" href="#">Directors Profiles</a></li>
+                                    <li><a class="compliance_partial" id="compliancedocuments_db_link" href="#">Compliance Documents</a></li>
+                                    <li><a class="career_partial " id="career_db_link" href="#">Careers</a></li>
+                                    <li><a href="https://www.pnbindia.in/" class=". " target="_blank">Parent PNB-India</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-md-5-new nav-item pns">
+                                <h3>Products and Services</h3>
+                                <ul>
+                                    <li><a class="currentaccount_partial personalhome_partialb" id="pcurrentaccount_db_link" href="#">Current Account</a></li>
+                                    <li><a class="savingsaccount_partial personalhome_partialb" id="psavingsaccount_db_link" href="#">Savings Account</a></li>
+                                    <li><a class="cashisa_partial personalhome_partialb" id="cashisa_db_link" href="#">Cash ISA</a></li>
+                                    <li><a class="fixeddepositaccount_partial personalhome_partialb" id="fixeddeposit_db_link" href="#">Fixed Deposit</a></li>
+                                    <li><a class="businesscurrentaccount_partial businesshome_partial" id="bcurrentaccount_db_link" href="#">Business Current Account</a></li>
+                                    <li><a class="businessfixeddepositaccount_partial businesshome_partial" id="businessfixeddeposit_db_link" href="#">Business Fixed Deposit</a></li>
+                                    <li><a class="loanshome_partial loanshome_partial" id="loans_db_link" href="#">Loans</a></li>
+                                    <li><a class="moneytransfer_partial moneytransfer_partial" id="moneytransfer_db_link" href="#">Money Transfer</a></li>
+                                    <li><a class="debitmastercard_partial personalhome_partialb" id="debitcardmaster_db_link" href="#">Debit Cards</a></li>
+                                    <li><a class="otherservices_partial " id="otherservices_db_link" href="#">Other Services</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-md-5-new new1">
+                                <h3>Contact Us</h3>
+                                <ul>
+                                    <li><i class="fa fa-phone" aria-hidden="true"></i>&nbsp;+44(0)800 849 9229</li>
+                                </ul>
+                                <p>From Monday To Friday<br> between 10.00 to 17.00</p>
+                                <div><i class="fa fa-envelope" aria-hidden="true"></i><img src="./assets/img/contactusemail_footer.png" class="contactpnb" /></div>
+                            </div>
+                            <div class="col-md-5-new newone">
+                                <p class="first-p">
+                                    <img class="fscslogo-global" src="./assets/img/FSCSlogo.png" />
+                                    <img class="fscslogo-iebrowser" src="./assets/img/FSCSlogo.png" />
+                                </p>
+
+                                <p>
+                                    <img class="cyberlogo-global" id="cybercss" src="./assets/img/cyber_essential_1.png">
+                                    <img class="cyberlogo-iebrowser" src="./assets/img/cyber_essential_1.png">
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-12 disclaimer">
+                            <p class="text-justify one">Punjab National Bank (International) Limited (PNBIL) is a UK incorporated banking subsidiary of Punjab National Bank, India (PNB). PNBIL is Authorized by the Prudential Regulation Authority and regulated by the Financial Conduct Authority and Prudential Regulation Authority. PNBIL is a member of the Financial Ombudsman Service (FOS) and the Financial Services Compensation Scheme (FSCS). PNBIL is authorised for accepting deposits by the Prudential Regulation Authority and regulated by the Financial Conduct Authority and Prudential Regulation Authority. Your eligible deposits are protected by the Financial Services Compensation Scheme, the UK's deposit protection scheme. The FSCS protects most depositors, including individuals and small companies upto &#163;85,000. Eligible deposits of large companies and small local authorities are covered upto &#163;85,000.</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <p>Copyright &#169; 2020 Punjab National Bank. All rights reserved</p>
+                        </div>
+                        <div class="col-md-8 nav-item pns">
+                            <ul class="privacy-disclaimer desktop">
+                                <li><a href="https://www.pnbindia.in/" class=". " target="_blank">PNB-India</a></li>
+                                <li><a class="newpress_partial " id="newsandpress_db_link" href="#">News & Press</a></li>
+                                <li><a class="otherservices_partial " id="otherservices_db_link" href="#">Other Services</a></li>
+                                <!-- <li><a href="">Career</a></li> -->
+                                <!-- <li><a href="">Financial Reports</a></li> -->
+                                <li><a href="~/pdf/Slavery and human trafficking statement.pdf" class=". " target="_blank">Modern Slavery Statement</a></li>
+                                <li><a class="complaints_partial " id="complaintandfeedback_db_link" href="#">Complaints & Feedback</a></li>
+                            </ul>
+                            <ul class="privacy-disclaimer mobile one">
+                                <li><a href="https://www.pnbindia.in/">Parent</a></li>
+                                <li><a href="https://www.pnbindia.in/" class=". " target="_blank">PNB-India</a></li>
+                                <li><a class="newpress_partial" id="newsandpress_db_link" href="">News & Press</a></li>
+                                <li><a class="otherservices_partial" id="otherservices_db_link" href="#">Other Services</a></li>
+                            </ul>
+                            <ul class="privacy-disclaimer mobile">
+                                <li><a class="career_partial " id="career_db_link" href="#">Career</a></li>
+                                <li><a class="financialreport_partial " id="financialreports_db_link" href="#">Financial Reports</a></li>
+                                <li><a href="~/pdf/Slavery and human trafficking statement.pdf" class=". " target="_blank">Modern Slavery Statement</a></li>
+                                <li><a class="complaints_partial " id="complaintandfeedback_db_link" href="#">Complaints & Feedback</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+
+            <script type="text/javascript" src="./assets/js/owl.carousel.js"></script>
+            <script src="./Scripts/_Layout.js"></script>
+            <script src="./Scripts/FAQ.js"></script>
+            <script src="./Scripts/InnerPageContent.js"></script>
+            <script src="./Scripts/Accordian.js"></script>
+           
+            <script src="./Scripts/Popup.js"></script>
+            <script type="text/javascript" src="./assets/js/jquery.min.js"></script>
+            <script type="text/javascript" src="./assets/js/bootstrap.min.js"></script>
+
+
+        </div>
+    </div>
+</body>
+</html>
+
+
